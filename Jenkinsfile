@@ -1,6 +1,6 @@
 node {
     // This step should not normally be used in your script. Consult the inline help for details.
-    withDockerContainer('python:2-alpine') {
+    docker.image('python:2-alpine') {
         // some block
         stage('Build') {
             checkout scm
